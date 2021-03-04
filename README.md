@@ -1,1 +1,1 @@
-# MI_Unet
+# Mutual information measurments on U-Net
