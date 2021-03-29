@@ -11,7 +11,7 @@ Make sure to have all the requirements installed before running the code.
 
 
 
-***********Quick method for running the code***********
+## ***********Quick method for running the code***********
 
 1. First, run `SaveActivation_nuceli.ipynb` with appropriate epochs. (Warning! Saving data may take up a huge amount of storage. Make sure to have enough space or recommend running it on the other machine. Here, it is currently set as 3, make sure to change the epochs to see the full results. )
 
@@ -19,7 +19,7 @@ Make sure to have all the requirements installed before running the code.
 
 
 
-***********Reference code and dataset***********
+## ***********Reference code and dataset***********
 
 The original code from : https://github.com/artemyk/ibsgd 
 
