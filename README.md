@@ -1,5 +1,8 @@
 # Codes for "Information flow through U-Nets"
-Last update:Oct.22.2020
+Last update:Apr.30.2021
+
+This repository contains the code for mutual information measurements on U-Net model using the nuclei image dataset.
+
 
 Make sure to have all the requirements installed before running the code. 
 
@@ -11,7 +14,7 @@ Make sure to have all the requirements installed before running the code.
 
 
 
-***********Quick method for running the code***********
+**Quick method for running the code**
 
 1. First, run `SaveActivation_nuceli.ipynb` with appropriate epochs. (Warning! Saving data may take up a huge amount of storage. Make sure to have enough space or recommend running it on the other machine. Here, it is currently set as 3, make sure to change the epochs to see the full results. )
 
@@ -19,9 +22,38 @@ Make sure to have all the requirements installed before running the code.
 
 
 
-***********Reference code and dataset***********
+**Reference code and dataset**
 
 The original code from : https://github.com/artemyk/ibsgd 
 
 The dataset from : https://www.kaggle.com/c/data-science-bowl-2018/data
+
+
+**Citation**
+
+If you find this code useful, please cite the following paper:
+
+S. Lee and I. V. Bajic, “Information flow through U-Nets,” Proc. IEEE International Symposium on Biomedical Imaging (ISBI), Apr. 2021.
+
+ 
+```
+BibTeX:
+
+@inproceedings{Lee_Bajic_2021,
+
+  author={S. Lee and I. V. Baji'\{c}},
+
+  booktitle={Proc. IEEE International Symposium on Biomedical Imaging (ISBI)},
+
+  title={Information flow through {U-Nets}},
+
+  year={2021},
+
+  month={Apr.},
+
+  address={Nice, France}
+
+}
+```
+
 
