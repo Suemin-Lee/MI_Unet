@@ -3,7 +3,7 @@
 This repository contains the code for mutual information measurements on U-Net model using the nuclei image dataset.
 
 
-###### **Installations**
+#### **Installations**
 
 Make sure to have all the requirements installed before running the code. 
 
