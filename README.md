@@ -13,12 +13,8 @@ Make sure to have all the requirements installed before running the code.
 * `Unet_nuceli_ComputeMI_k_mean_clustering.ipynb` loads the data files, computes MI values using spatial coarsening methods. It plots Information planes and U-shaped information planes from the data created using `SaveActivation_nuceli.ipynb`.
 
 
-
-<<<<<<< HEAD
 **Quick method for running the code**
 =======
-### ***********Quick method for running the code***********
->>>>>>> 62e2c8fcc4e445ca496ecb536700a9cf21d245e5
 
 1. First, run `SaveActivation_nuceli.ipynb` with appropriate epochs. (Warning! Saving data may take up a huge amount of storage. Make sure to have enough space or recommend running it on the other machine. Here, it is currently set as 3, make sure to change the epochs to see the full results. )
 
@@ -26,12 +22,8 @@ Make sure to have all the requirements installed before running the code.
 
 
 
-<<<<<<< HEAD
 **Reference code and dataset**
 =======
-### ***********Reference code and dataset***********
->>>>>>> 62e2c8fcc4e445ca496ecb536700a9cf21d245e5
-
 The original code from : https://github.com/artemyk/ibsgd 
 
 The dataset from : https://www.kaggle.com/c/data-science-bowl-2018/data
@@ -46,21 +38,13 @@ S. Lee and I. V. Bajic, “Information flow through U-Nets,” Proc. IEEE Intern
  
 ```
 BibTeX:
-
 @inproceedings{Lee_Bajic_2021,
-
   author={S. Lee and I. V. Baji'\{c}},
-
   booktitle={Proc. IEEE International Symposium on Biomedical Imaging (ISBI)},
-
   title={Information flow through {U-Nets}},
-
   year={2021},
-
   month={Apr.},
-
   address={Nice, France}
-
 }
 ```
 
