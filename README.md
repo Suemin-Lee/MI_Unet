@@ -3,6 +3,8 @@
 This repository contains the code for mutual information measurements on U-Net model using the nuclei image dataset.
 
 
+######### **Installations**
+
 Make sure to have all the requirements installed before running the code. 
 
 * `SaveActivation_nuceli.ipynb` trains the data on 'stage1_train' folder and saves (in a data directory) activations when run on test set('stage1_test') inputs (as well as weight norms, &c.) for each epoch.
