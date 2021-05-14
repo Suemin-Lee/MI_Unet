@@ -79,14 +79,16 @@ plt.show()
 
 
 
-# Define IoU metric
-def iou_coef(y_true, y_pred, smooth=1):
-    intersection = K.sum(K.abs(y_true * y_pred), axis=-1)
-    union = K.sum(y_true,-1) + K.sum(y_pred,-1) - intersection
-    return (intersection+ smooth) / (union+smooth)        
+# Define dice_coef
+def dice_coef(y_true, y_pred, smooth=1):
+    intersection = K.sum(y_true * y_pred, axis=[1,2,3])
+    union = K.sum(y_true, axis=[1,2,3]) + K.sum(y_pred, axis=[1,2,3])
+    dice = K.mean((2. * intersection + smooth)/(union + smooth), axis=0)
+    return dice
 
-def iou_coef_loss(y_true, y_pred):
-    return -iou_coef(y_true, y_pred)
+def dice_coef_loss(y_true, y_pred, smooth=1):
+    return -dice_coef(y_true, y_pred)
+
 
 
 
@@ -164,8 +166,7 @@ model.summary()
 
 model.compile(loss='binary_crossentropy', 
               optimizer=keras.optimizers.SGD(lr=0.001),
-            #   metrics=[iou_coef])
-              metrics=['accuracy'])
+              metrics=[dice_coef])
 
 
 
@@ -183,7 +184,7 @@ tst = Dataset(X_test , Y_test, y_test, nb_classes)
 cfg = {}
 cfg['SGD_BATCHSIZE']    = 16
 cfg['SGD_LEARNINGRATE'] = 0.001
-cfg['NUM_EPOCHS']       = 1    #For testing
+cfg['NUM_EPOCHS']       = 10    #For testing
 cfg['FULL_MI']          = True
 
 
