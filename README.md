@@ -1,6 +1,6 @@
 # **Information flow through U-Nets**
 
-This repository contains the code for mutual information measurements on U-Net model using the nuclei image dataset.
+This repository contains the code for mutual information measurements on U-Net model using the nuclei image dataset.[arXiv](https://arxiv.org/pdf/2101.08427.pdf)
 
 
 Make sure to have all the requirements installed before running the code. 
